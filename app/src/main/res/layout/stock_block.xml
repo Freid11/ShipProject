@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/stock"
+        android:theme="@style/TextViewHead"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <com.santalu.autoviewpager.AutoViewPager
+            android:id="@+id/avp_stock"
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:layout_above="@+id/indicator"
+            app:avp_autoScroll="true"
+            app:avp_duration="5000"
+            app:avp_indeterminate="true" />
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            app:piv_padding="6dp"
+            app:piv_radius="6dp"
+            app:piv_selectedColor="@color/colorAccent"
+            app:piv_unselectedColor="@color/hint_indicator"
+            app:piv_viewPager="@+id/avp_stock"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

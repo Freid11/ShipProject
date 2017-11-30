@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#f2f3f3</color>
+    <color name="colorAccent">#fb7c02</color>
+    <color name="cerulean">#0088d2</color>
+    <color name="text_title">#de000000</color>
+    <color name="hint_color">#8a000000</color>
+    <color name="hint_indicator">#19000000</color>
+    <color name="color_all">#0088d2</color>
+    <color name="vermillion">#ef1d1d</color>
+    <color name="red">#ff0000</color>
+
+</resources>
